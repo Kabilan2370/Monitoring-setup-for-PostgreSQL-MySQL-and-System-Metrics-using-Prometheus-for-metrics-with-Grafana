@@ -10,7 +10,7 @@
 
 **2. Install the Prometheus, Mysql, Postgres and Grafana**
 
-![image](./Screenshot/9.png)
+![image](./Screenshot/7.png)
 
 **3. Once Installed the prometheus then install the exporter for Node, Mysql and Postgres. Then create a system service file at this path /etc/systemd/system/**
 
