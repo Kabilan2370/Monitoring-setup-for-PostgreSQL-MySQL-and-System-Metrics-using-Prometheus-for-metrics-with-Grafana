@@ -2,11 +2,11 @@
 
 **1. For this monitoring setup below the ports should be opened.**
 
-├──Node Exporter (9100)
-├── PostgreSQL Exporter (9187)
-├── MySQL Exporter (9104)
-├── Prometheus (9090)
-└── Grafana (3000)
+- Node Exporter (9100)
+- PostgreSQL Exporter (9187)
+- MySQL Exporter (9104)
+- Prometheus (9090)
+- Grafana (3000)
 
 **2. Install the Prometheus, Mysql, Postgres and Grafana**
 
@@ -30,6 +30,8 @@
       sudo systemctl daemon-reload
       sudo systemctl enable prometheus
       sudo systemctl start prometheus
+
+![image](./Screenshot/2.png)
 
 **6. For postgres exporter, we need to create a DB User**
 
@@ -76,3 +78,11 @@ Dashboard ID: 9628
 
 - MySQL Metrics
 Dashboard ID: 7362
+
+![image](./Screenshot/3.png)
+
+![image](./Screenshot/4.png)
+
+![image](./Screenshot/5.png)
+
+![image](./Screenshot/6.png)
