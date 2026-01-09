@@ -1,0 +1,15 @@
+[Unit]
+Description=MySQL Exporter
+Wants=network-online.target
+After=network-online.target mysql.service
+
+[Service]
+User=mysqld_exporter
+Group=mysqld_exporter
+Type=simple
+ExecStart=/usr/local/bin/mysqld_exporter \
+  --config.my-cnf=/etc/.mysqld_exporter.cnf
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
